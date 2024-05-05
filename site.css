@@ -104,6 +104,40 @@ section:nth-child(even) {
 	background: transparent;
 }
 
+/* ---===== Button ====--- */
+
+.btn-my {
+	color: whitesmoke !important;
+	background-color: color(srgb 0.0294 0.1954 0.3238);
+	transition: all 0.2s linear 0s;
+	width: 17rem;
+	position: relative;
+	overflow: hidden;
+}
+
+.btn-my:before {
+	content: ">";
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 0;
+	right: -30px;
+	width: 30px;
+	height: 100%;
+	transition: all 0.2s linear 0s;
+}
+
+.btn-my:hover {
+	text-indent: -30px;
+	background-color: color(srgb 0.1129 0.3461 0.525);
+}
+
+.btn-my:hover:before {
+	right: 0;
+	text-indent: 0px;
+}
+
 /* ---===== FOOTER ====--- */
 
 footer {
